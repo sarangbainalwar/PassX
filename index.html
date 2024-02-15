@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassX - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">PassX</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <p>
+        Discover PassX by Sarang Bainalwar: Your Ultimate Password Management Solution. Elevate your digital security with PassX, crafted with expertise by Sarang Bainalwar. Seamlessly safeguard your passwords with state-of-the-art encryption technology. Experience peace of mind as you effortlessly manage your digital identity. Trust in PassX, designed with care by Sarang Bainalwar.
+      </p>
+      <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+      <p class="alert">Your password has been copied</p>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+       
+
+      
+      </table>
+      <h2>Add a password</h2>
+      <form action="/submit" method="post">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" required />
+        <br /><br />
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+        <br /><br />
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
